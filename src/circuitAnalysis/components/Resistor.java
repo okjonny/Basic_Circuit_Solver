@@ -13,6 +13,5 @@ public class Resistor {
         this.name = name;
         this.value = value;
         this.measurement = "Ω";
-
     }
 }

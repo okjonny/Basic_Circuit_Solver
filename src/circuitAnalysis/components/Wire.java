@@ -7,7 +7,7 @@ import java.util.LinkedList;
 
 public class Wire extends JComponent {
     /**
-     * Each line represents a "wire" used within the circuit.
+     * Each Line represents a "wire" used to create the circuit.
      */
     private static class Line {
         final int x1,x2,y1,y2;
@@ -22,18 +22,13 @@ public class Wire extends JComponent {
         }
     }
 
+    /**
+     * Private Members
+     */
     private final LinkedList<Line> lines = new LinkedList<Line>();
 
     public void addLine(int x1, int x2, int x3, int x4) {
         lines.add(new Line(x1, x2, x3, x4));
-        repaint();
-    }
-
-    /**
-     * Clear all wires
-     */
-    public void clearAllWires() {
-        lines.clear();
         repaint();
     }
 
@@ -47,6 +42,21 @@ public class Wire extends JComponent {
         for (Line line : lines) {
             g.drawLine(line.x1, line.y1, line.x2, line.y2);
         }
+    }
+
+    /**
+     * Clear all wires from {@code lines}
+     */
+    public void clearAllWires() {
+        lines.clear();
+        repaint();
+    }
+
+    /**
+     * remove the last wire the user put down.
+     */
+    public void deleteWire() {
+        lines.removeLast();
     }
 }
 
