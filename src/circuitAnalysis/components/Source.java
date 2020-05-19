@@ -26,5 +26,13 @@ public class Source extends JPanel {
     public Source() {
     }
 
+    @Override
+    public String getName() {
+        return name;
+    }
 
+   @Override
+   public String toString(){
+        return getName();
+   }
 }

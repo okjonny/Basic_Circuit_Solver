@@ -23,7 +23,7 @@ public class Node {
      *
      * @param name - label of this
      * @param x    - x coordinate in {@code matrix}
-     * @param y    - y coordiante in {@code matrix}
+     * @param y    - y coordinate in {@code matrix}
      */
     public Node(String name, int x, int y) {
         this.name = name;
