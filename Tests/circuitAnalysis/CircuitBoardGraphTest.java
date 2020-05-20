@@ -13,8 +13,7 @@ public class CircuitBoardGraphTest {
     private Source  source1 = new Source("Vs", 5);
 
     @Test
-    public void addWire() {
-        tester.addEdge(source1,wire1);
-        assertEquals("Vs => wire1",tester.toString());
+    public void contructor(){
+        assertEquals("{}", tester.toString());
     }
 }

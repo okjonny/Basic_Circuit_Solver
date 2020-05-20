@@ -1,5 +1,8 @@
 package circuitAnalysis.components;
 
+import circuitAnalysis.Node;
+import circuitAnalysis.UsefulClass;
+
 /*
  * Resistor element
  */

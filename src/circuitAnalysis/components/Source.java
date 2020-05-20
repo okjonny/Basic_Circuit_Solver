@@ -1,11 +1,9 @@
 package circuitAnalysis.components;
 
-import javax.imageio.ImageIO;
+import circuitAnalysis.Node;
+
 import javax.swing.*;
-import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 
 /*
  * Power/Direct voltage source
