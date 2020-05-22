@@ -17,7 +17,7 @@ public interface Node {
      *
      * @param otherNode - adjacent neighbor of this
      */
-    public <T extends UsefulClass> void addEdge(T otherNode);
+    public <T extends Components> void addEdge(Components otherNode);
 
     /**
      * Retrives neighbor objects

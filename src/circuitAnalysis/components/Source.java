@@ -1,27 +1,17 @@
 package circuitAnalysis.components;
 
-import circuitAnalysis.Node;
-
-import javax.swing.*;
-import java.awt.image.BufferedImage;
+import circuitAnalysis.Components;
 
 /*
  * Power/Direct voltage source
  */
-public class Source extends JPanel {
+public class Source extends Components {
     private String name;
     private String measurement;
     private double value;
 
-    public Source(String name, int value) {
-        this.name = name;
-        this.value = value;
-        this.measurement = "V";
-    }
-
-    private BufferedImage image;
-
-    public Source() {
+    public Source(String name, double value) {
+        super(name, value);
     }
 
     @Override
@@ -29,8 +19,8 @@ public class Source extends JPanel {
         return name;
     }
 
-   @Override
-   public String toString(){
+    @Override
+    public String toString() {
         return getName();
-   }
+    }
 }

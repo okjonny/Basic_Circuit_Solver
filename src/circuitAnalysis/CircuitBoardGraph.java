@@ -1,7 +1,6 @@
 package circuitAnalysis;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /*
  * Graph representation of our circuit.
@@ -12,7 +11,7 @@ public class CircuitBoardGraph {
      */
     private static Node[][] matrix;
     private static Node startNodePos;
-    private static Map<Integer, Node> vertexMap;
+    private static Map<Integer, Components> vertexMap;
     private static String sspSource;
     private static int nodeId;
 
@@ -22,21 +21,25 @@ public class CircuitBoardGraph {
     public CircuitBoardGraph() {
         vertexMap = new HashMap<>();
         sspSource = "";
+        nodeId = 0;
     }
 
     /**
      * Creates a Wire to connect to other element
-     *
      */
-    public void addVertex(int nodeID, Node node) {
+    public void addVertex(int nodeID, Components node) {
         assert !vertexMap.containsKey(nodeID) : "Violation of label is not a node of this graph";
         vertexMap.put(nodeID, node);
         sspSource = ""; // adding vertex invalidates previous run
+        nodeId++;
     }
 
     @Override
     public String toString() {
-        String result = "";
-        return result;
+        String toText = "";
+        for (Map.Entry<Integer, Components> entry : vertexMap.entrySet()) {
+            toText += entry.getKey() + " : " + entry.getValue();
+        }
+        return toText;
     }
 }

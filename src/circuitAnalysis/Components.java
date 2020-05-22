@@ -3,7 +3,7 @@ package circuitAnalysis;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public abstract class UsefulClass <T> implements Node {
+public class Components implements Node {
     /**
      * Private Instance Variables
      */
@@ -13,13 +13,18 @@ public abstract class UsefulClass <T> implements Node {
     private boolean visited;
     private Node previous;
     private LinkedList<Node> adj;
-    private final Class<T> stateClass;
 
-    public UsefulClass(String name, double value, Class<T> stateClass){
+    public Components(String name, double value) {
         this.name = name;
         this.value = value;
-        this.stateClass = stateClass;
     }
+
+    public Components(String name, double value, int nodeID) {
+        this.name = name;
+        this.value = value;
+        this.nodeID = nodeID;
+    }
+
     /**
      * Retrieves unique ID
      *
@@ -29,10 +34,14 @@ public abstract class UsefulClass <T> implements Node {
         return this.nodeID;
     }
 
+    public int getValue(){
+        return this.getValue();
+    }
 
-    public <T extends UsefulClass> void addEdge(Class<T> otherNode) {
-        assert otherNode != null : "cant add, it's null";
-        adj.add((otherNode.getName(), otherNode.getNodeID()));
+
+    @Override
+    public <T extends Components> void addEdge(Components otherNode) {
+        adj.add(new Components(otherNode.getName(),otherNode.getValue(),otherNode.getNodeID()));
     }
 
     /**
@@ -110,6 +119,16 @@ public abstract class UsefulClass <T> implements Node {
      */
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public int getX() {
+        return 0;
+    }
+
+    @Override
+    public int getY() {
+        return 0;
     }
 
     /**
