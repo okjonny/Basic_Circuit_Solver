@@ -17,12 +17,14 @@ public class Components implements Node {
     public Components(String name, double value) {
         this.name = name;
         this.value = value;
+        this.adj =  new LinkedList<>();
     }
 
     public Components(String name, double value, int nodeID) {
         this.name = name;
         this.value = value;
         this.nodeID = nodeID;
+        this.adj = new LinkedList<>();
     }
 
     /**
