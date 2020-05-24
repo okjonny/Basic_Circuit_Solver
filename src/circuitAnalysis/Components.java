@@ -3,6 +3,11 @@ package circuitAnalysis;
 import java.util.Iterator;
 import java.util.LinkedList;
 
+/**
+ * Purpose of this class is for all elements (Wires, Power Sources, Resistors, etc.)
+ * Can extend this  class so that the CircuitBoardGraph class can add 'Components' without
+ * having to worry if the element is a wire or something specific.
+ */
 public class Components implements Node {
     /**
      * Private Instance Variables
@@ -14,12 +19,25 @@ public class Components implements Node {
     private Node previous;
     private LinkedList<Node> adj;
 
+    /**
+     * Default Constructor for children classes to take values from.
+     *
+     * @param name  - title of element
+     * @param value - can represent (Volts, Resistance, etc.)
+     */
     public Components(String name, double value) {
         this.name = name;
         this.value = value;
-        this.adj =  new LinkedList<>();
+        this.adj = new LinkedList<>();
     }
 
+    /**
+     * Default Constructor for children classes to take values from.
+     *
+     * @param name  - title of element
+     * @param value - can represent (Volts, Resistance, etc.)
+     * @param nodeID - unique ID to retrieve data from {@code vertexmap} in CircuitBoardGraph class.
+     */
     public Components(String name, double value, int nodeID) {
         this.name = name;
         this.value = value;
@@ -36,14 +54,14 @@ public class Components implements Node {
         return this.nodeID;
     }
 
-    public int getValue(){
+    public int getValue() {
         return this.getValue();
     }
 
 
     @Override
     public <T extends Components> void addEdge(Components otherNode) {
-        adj.add(new Components(otherNode.getName(),otherNode.getValue(),otherNode.getNodeID()));
+        adj.add(new Components(otherNode.getName(), otherNode.getValue(), otherNode.getNodeID()));
     }
 
     /**

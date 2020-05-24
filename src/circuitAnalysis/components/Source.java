@@ -3,7 +3,8 @@ package circuitAnalysis.components;
 import circuitAnalysis.Components;
 
 /*
- * Power/Direct voltage source
+ * Important for our circuit to have voltage, without voltage our circuit
+ * would have no power and nothing will come about it.
  */
 public class Source extends Components {
     private String name;

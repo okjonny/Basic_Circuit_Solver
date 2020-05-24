@@ -3,6 +3,12 @@ package circuitAnalysis;
 import java.util.Iterator;
 import java.util.LinkedList;
 
+/**
+ * The point of the Node interface was for the circuit elements to implement these methods
+ * in each of their classes. I then decided to add a parent class that implemented the methods
+ * (inside of Components). However, I'm not sure if this is the most effective/efficient way to
+ * go about extending this interface to its children.
+ */
 public interface Node {
 
     /**
@@ -13,7 +19,7 @@ public interface Node {
     int getNodeID();
 
     /**
-     * Adds a neighbor
+     * Adds a neighbor to the current element
      *
      * @param otherNode - adjacent neighbor of this
      */
