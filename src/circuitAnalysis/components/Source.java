@@ -7,8 +7,7 @@ import circuitAnalysis.Components;
  * would have no power and nothing will come about it.
  */
 public class Source extends Components {
-    private String name;
-    private String measurement;
+
     private double value;
 
     public Source(String name, double value) {
@@ -17,11 +16,7 @@ public class Source extends Components {
 
     @Override
     public String getName() {
-        return name;
+        return super.getName();
     }
 
-    @Override
-    public String toString() {
-        return getName();
-    }
 }

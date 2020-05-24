@@ -1,5 +1,6 @@
 package circuitAnalysis;
 
+import circuitAnalysis.components.Resistor;
 import circuitAnalysis.components.Source;
 import circuitAnalysis.components.Wire;
 import org.junit.Before;
@@ -10,10 +11,19 @@ import static org.junit.Assert.*;
 public class CircuitBoardGraphTest {
     private CircuitBoardGraph tester = new CircuitBoardGraph();
     private Components source1 = new Source("Vs", 5);
+    private Components source2 = new Source("Vs2", 10);
+    private Components rs1 = new Resistor("R1", 100);
 
     @Test
-    public void constructor() {
+    public void testConstructor() {
         tester.addVertex(0, source1);
-        assertEquals("{}", tester.toString());
+        tester.addVertex(1, source2);
+        assertEquals("[Vs]\n[Vs2]\n", tester.toString());
     }
+
+    @Test
+    public void testSuperSimpleCircuit() {
+        //   assertEquals(5,findVoltageDrop(r1));
+    }
+
 }

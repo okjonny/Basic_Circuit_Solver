@@ -47,7 +47,7 @@ public class CircuitBoardGraph {
     public String toString() {
         String toText = "";
         for (Map.Entry<Integer, Components> entry : vertexMap.entrySet()) {
-            toText += entry.getKey() + " : " + entry.getValue();
+            toText += entry.getValue() + "\n";
         }
         return toText;
     }

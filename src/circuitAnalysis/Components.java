@@ -16,8 +16,8 @@ public class Components implements Node {
     private int nodeID;
     private double dFromStart, value;
     private boolean visited;
-    private Node previous;
-    private LinkedList<Node> adj;
+    private Components previous;
+    private LinkedList<Components> adj;
 
     /**
      * Default Constructor for children classes to take values from.
@@ -34,8 +34,8 @@ public class Components implements Node {
     /**
      * Default Constructor for children classes to take values from.
      *
-     * @param name  - title of element
-     * @param value - can represent (Volts, Resistance, etc.)
+     * @param name   - title of element
+     * @param value  - can represent (Volts, Resistance, etc.)
      * @param nodeID - unique ID to retrieve data from {@code vertexmap} in CircuitBoardGraph class.
      */
     public Components(String name, double value, int nodeID) {
@@ -54,10 +54,9 @@ public class Components implements Node {
         return this.nodeID;
     }
 
-    public int getValue() {
-        return this.getValue();
+    public double getValue() {
+        return this.value;
     }
-
 
     @Override
     public <T extends Components> void addEdge(Components otherNode) {
@@ -65,11 +64,11 @@ public class Components implements Node {
     }
 
     /**
-     * Retrives neighbor objects
+     * Retrieves neighbor objects
      *
      * @return iterator of {@code adj} linked-list
      */
-    public Iterator<Node> edges() {
+    public Iterator<Components> edges() {
         return adj.iterator();
     }
 
@@ -78,13 +77,14 @@ public class Components implements Node {
      *
      * @return s - name of node
      */
+    @Override
     public String toString() {
-        String s = "[Node: " + (getName().equals("X") ? "X" : getNodeID()) + ((this.edges().hasNext()) ? " -> " : "");
-        Iterator<Node> itr = adj.iterator();
-        while (itr.hasNext())
-            s += itr.next() + " ";
-        s += "]";
-        return s;
+        Iterator<Components> itr = adj.iterator();
+        StringBuilder s = new StringBuilder("[" + this.getName() + ((itr.hasNext()) ? " : " : "]"));
+        while (itr.hasNext()) {
+            s.append(itr.next() + ((itr.hasNext()) ? " -> " : "]"));
+        }
+        return s.toString();
     }
 
     /**
@@ -92,7 +92,7 @@ public class Components implements Node {
      *
      * @return this edges list
      */
-    public LinkedList<Node> getEdges() {
+    public LinkedList<Components> getEdges() {
         return adj;
     }
 
@@ -165,7 +165,7 @@ public class Components implements Node {
      *
      * @param x - neighbor that called this
      */
-    public void setPrevious(Node x) {
+    public void setPrevious(Components x) {
         this.previous = x;
     }
 

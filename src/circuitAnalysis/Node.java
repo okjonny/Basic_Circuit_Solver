@@ -30,7 +30,7 @@ public interface Node {
      *
      * @return iterator of {@code adj} linked-list
      */
-    public Iterator<Node> edges();
+    public Iterator<Components> edges();
 
     /**
      * Makes this Node readable showing its neighbors
@@ -44,7 +44,7 @@ public interface Node {
      *
      * @return this edges list
      */
-    LinkedList<Node> getEdges();
+    LinkedList<Components> getEdges();
 
     /**
      * Gets the name of this
@@ -101,7 +101,7 @@ public interface Node {
      *
      * @param x - neighbor that called this
      */
-    public void setPrevious(Node x);
+    public void setPrevious(Components x);
 }
 
 
