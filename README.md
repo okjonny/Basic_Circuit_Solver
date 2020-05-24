@@ -5,5 +5,7 @@ Goal of my project:
 How?
   Starting from baby steps:
   Know how to add elements to a graph.
-  Use Kirchoff's Laws for a basic Voltage -> Resistor -> Back to Voltage connection and computer Resistance or current using Ohm's Law.
+  Use Kirchoff's Laws for a basic Voltage -> Resistor -> Back to Voltage connection and compute Resistance or current using Ohm's Law.
   
+  Future Plans:
+  Create a user-friendly interface to build circuit
