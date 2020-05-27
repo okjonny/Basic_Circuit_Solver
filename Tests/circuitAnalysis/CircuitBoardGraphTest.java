@@ -16,14 +16,13 @@ public class CircuitBoardGraphTest {
 
     @Test
     public void testConstructor() {
-        tester.addVertex(0, source1);
-        tester.addVertex(1, source2);
+        tester.addVertex(source1);
+        tester.addVertex(source1);
         assertEquals("[Vs]\n[Vs2]\n", tester.toString());
     }
 
     @Test
     public void testSuperSimpleCircuit() {
-        //   assertEquals(5,findVoltageDrop(r1));
     }
 
 }

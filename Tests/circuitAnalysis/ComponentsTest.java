@@ -3,7 +3,7 @@ package circuitAnalysis;
 import circuitAnalysis.components.Source;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class ComponentsTest {
 
@@ -14,7 +14,8 @@ public class ComponentsTest {
     @Test
     public void testAddEdge() {
         source1.addEdge(source2);
-        assertEquals("test", source1);
+        source1.addEdge(source2);
+        assertEquals("[vs1 : [vs2]]", source1.toString());
     }
 
     @Test

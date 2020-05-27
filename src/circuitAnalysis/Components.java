@@ -177,4 +177,8 @@ public class Components implements Node {
     public double getDistanceFromStart() {
         return dFromStart;
     }
+
+    public void setNodeID(int id) {
+        this.nodeID = id;
+    }
 }
