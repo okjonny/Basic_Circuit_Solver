@@ -19,4 +19,7 @@ public class Source extends Components {
         return super.getName();
     }
 
+    public void setValue(double value){
+        super.setValue(value);
+    }
 }

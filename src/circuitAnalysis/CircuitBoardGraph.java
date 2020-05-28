@@ -14,9 +14,9 @@ public class CircuitBoardGraph {
      * {@code sspSource} - used for invalidating previous ssp run when adding a new Vertex (?)
      * {@code nodeId} - each Component used in this graph, contains their own unique ID
      */
-    private static Node[][] matrix;
-    private static Node startNodePos;
-    private static Map<Integer, Components> vertexMap;
+   // private static Node[][] matrix;
+    //private static Node startNodePos;
+    public static Map<Integer, Components> vertexMap;
     private static String sspSource;
     private static int nodeId;
 
@@ -32,6 +32,7 @@ public class CircuitBoardGraph {
 
     /**
      * Adds a new Vertex to this
+     *
      * @param element
      */
     public void addVertex(Components element) {
@@ -52,5 +53,25 @@ public class CircuitBoardGraph {
             toText += entry.getValue() + "\n";
         }
         return toText;
+    }
+
+    /**
+     * Loop until original element is found, gather data, then display  missing information.
+     *
+     * For example - vs1 -> wire ->  rs1 -> wire -> vs1
+     *
+     * So, we save value of voltage of the loop in int - [vs1.getValue(), ...,n]
+     * Same with resistors - [rs1.getValue(), ..., n]
+     * Wires are  decorative backend but helpful to see with images for a user-friendly experience
+     *
+     *
+     */
+
+
+    public Map<Integer, Components > getMap(){
+        return vertexMap;
+    }
+    public void KVL(){
+
     }
 }

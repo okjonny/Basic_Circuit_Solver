@@ -181,4 +181,8 @@ public class Components implements Node {
     public void setNodeID(int id) {
         this.nodeID = id;
     }
+
+    public void setValue(double value){
+        this.value =  value;
+    }
 }
