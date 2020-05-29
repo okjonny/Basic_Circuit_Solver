@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45518e4a-47f9-4a0d-8d7e-092397ccc4f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/circuitAnalysis/FindValues.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/circuitAnalysis/CircuitBoardGraphTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/circuitAnalysis/CircuitBoardGraphTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic_Circuit_Solver/circuitAnalysis/CircuitBoardGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic_Circuit_Solver/circuitAnalysis/CircuitBoardGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Basic_Circuit_Solver/circuitAnalysis/CircuitBoardGraphTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Basic_Circuit_Solver/circuitAnalysis/CircuitBoardGraphTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/circuitAnalysis/CircuitBoardGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/circuitAnalysis/CircuitBoardGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/circuitAnalysis/Components.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/circuitAnalysis/Components.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/circuitAnalysis/FindValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/circuitAnalysis/FindValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/circuitAnalysis/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/circuitAnalysis/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/circuitAnalysis/components/Source.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/circuitAnalysis/components/Source.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,24 +24,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/CircuitBoardGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="557">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2078#2079#0" expanded="true" />
-                <element signature="e#2109#2110#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/FindValues.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2072#2073#0" expanded="true" />
+                <element signature="e#2104#2105#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,37 +38,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/Components.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="185" column="27" selection-start-line="185" selection-start-column="27" selection-end-line="185" selection-end-column="27" />
+            <state>
+              <caret line="76" selection-start-line="76" selection-end-line="76" />
               <folding>
-                <element signature="e#4181#4182#0" expanded="true" />
-                <element signature="e#4214#4215#0" expanded="true" />
                 <element signature="e#4251#4252#0" expanded="true" />
                 <element signature="e#4283#4284#0" expanded="true" />
-                <element signature="e#4328#4329#0" expanded="true" />
-                <element signature="e#4363#4364#0" expanded="true" />
+                <element signature="e#4324#4325#0" expanded="true" />
+                <element signature="e#4359#4360#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tests/circuitAnalysis/CircuitBoardGraphTest.java">
+        <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/FindValues.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            <state relative-caret-position="323">
+              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/components/Source.java">
+        <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+            <state>
               <folding>
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#522#523#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/circuitAnalysis/CircuitBoardGraphTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-106">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,7 +86,22 @@
         <entry file="file://$PROJECT_DIR$/Tests/circuitAnalysis/ComponentsTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/components/Source.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+              <folding>
+                <element signature="e#481#482#0" expanded="true" />
+                <element signature="e#518#519#0" expanded="true" />
+                <element signature="e#551#552#0" expanded="true" />
+                <element signature="e#578#579#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,22 +147,22 @@
         <option value="$PROJECT_DIR$/src/circuitAnalysis/UsefulClass.java" />
         <option value="$PROJECT_DIR$/src/circuitAnalysis/AbstractNode.java" />
         <option value="$PROJECT_DIR$/src/circuitAnalysis/components/Wire.java" />
-        <option value="$PROJECT_DIR$/src/circuitAnalysis/Node.java" />
         <option value="$PROJECT_DIR$/src/circuitAnalysis/components/Resistor.java" />
         <option value="$PROJECT_DIR$/Tests/circuitAnalysis/ComponentsTest.java" />
         <option value="$PROJECT_DIR$/src/circuitAnalysis/CircuitBoardGraph.java" />
+        <option value="$PROJECT_DIR$/src/circuitAnalysis/components/Source.java" />
+        <option value="$PROJECT_DIR$/src/circuitAnalysis/Node.java" />
+        <option value="$PROJECT_DIR$/src/circuitAnalysis/Components.java" />
         <option value="$PROJECT_DIR$/src/circuitAnalysis/FindValues.java" />
         <option value="$PROJECT_DIR$/Tests/circuitAnalysis/CircuitBoardGraphTest.java" />
-        <option value="$PROJECT_DIR$/src/circuitAnalysis/components/Source.java" />
-        <option value="$PROJECT_DIR$/src/circuitAnalysis/Components.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1856" />
-    <option name="y" value="-257" />
-    <option name="width" value="1440" />
-    <option name="height" value="869" />
+    <option name="x" value="179" />
+    <option name="y" value="132" />
+    <option name="width" value="1082" />
+    <option name="height" value="659" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -163,8 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,6 +212,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,7 +259,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CircuitBoardGraphTest.testCircuitWithResistorsInSeries">
+  <component name="RunManager" selected="JUnit.CircuitBoardGraphTest.testCircuitWithTwoVoltageSources">
+    <configuration name="CircuitBoardGraphTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Basic_Circuit_Solver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="circuitAnalysis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="circuitAnalysis" />
+      <option name="MAIN_CLASS_NAME" value="circuitAnalysis.CircuitBoardGraphTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CircuitBoardGraphTest.testCircuitWithResistorsInSeries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Basic_Circuit_Solver" />
       <extension name="coverage">
@@ -262,6 +286,22 @@
       <option name="PACKAGE_NAME" value="circuitAnalysis" />
       <option name="MAIN_CLASS_NAME" value="circuitAnalysis.CircuitBoardGraphTest" />
       <option name="METHOD_NAME" value="testCircuitWithResistorsInSeries" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CircuitBoardGraphTest.testCircuitWithTwoVoltageSources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Basic_Circuit_Solver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="circuitAnalysis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="circuitAnalysis" />
+      <option name="MAIN_CLASS_NAME" value="circuitAnalysis.CircuitBoardGraphTest" />
+      <option name="METHOD_NAME" value="testCircuitWithTwoVoltageSources" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -283,7 +323,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CircuitBoardGraphTest.testSupedsafrSimpleCircuit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ComponentsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Basic_Circuit_Solver" />
       <extension name="coverage">
         <pattern>
@@ -292,52 +332,19 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="circuitAnalysis" />
-      <option name="MAIN_CLASS_NAME" value="circuitAnalysis.CircuitBoardGraphTest" />
-      <option name="METHOD_NAME" value="testSupedsafrSimpleCircuit" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircuitBoardGraphTest.testSupedsafrSimpleCircuit2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Basic_Circuit_Solver" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="circuitAnalysis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="circuitAnalysis" />
-      <option name="MAIN_CLASS_NAME" value="circuitAnalysis.CircuitBoardGraphTest" />
-      <option name="METHOD_NAME" value="testSupedsafrSimpleCircuit2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircuitBoardGraphTest.testSuperSimpleCircuit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Basic_Circuit_Solver" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="circuitAnalysis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="circuitAnalysis" />
-      <option name="MAIN_CLASS_NAME" value="circuitAnalysis.CircuitBoardGraphTest" />
-      <option name="METHOD_NAME" value="testSuperSimpleCircuit" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="circuitAnalysis.ComponentsTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CircuitBoardGraphTest.testCircuitWithResistorsInSeries" />
+        <item itemvalue="JUnit.CircuitBoardGraphTest.testCircuitWithTwoVoltageSources" />
+        <item itemvalue="JUnit.CircuitBoardGraphTest" />
+        <item itemvalue="JUnit.ComponentsTest" />
         <item itemvalue="JUnit.CircuitBoardGraphTest.testSimpleCircuitWithOneResistorSource" />
-        <item itemvalue="JUnit.CircuitBoardGraphTest.testSupedsafrSimpleCircuit" />
-        <item itemvalue="JUnit.CircuitBoardGraphTest.testSupedsafrSimpleCircuit2" />
-        <item itemvalue="JUnit.CircuitBoardGraphTest.testSuperSimpleCircuit" />
+        <item itemvalue="JUnit.CircuitBoardGraphTest.testCircuitWithResistorsInSeries" />
       </list>
     </recent_temporary>
   </component>
@@ -370,45 +377,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CircuitBoardGraphTest_testSupedsafrSimpleCircuit - 2020.05.27 at 18h 08m 00s.xml">
-      <configuration name="CircuitBoardGraphTest.testSupedsafrSimpleCircuit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CircuitBoardGraphTest_testSupedsafrSimpleCircuit - 2020.05.27 at 18h 08m 18s.xml">
-      <configuration name="CircuitBoardGraphTest.testSupedsafrSimpleCircuit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CircuitBoardGraphTest_testSupedsafrSimpleCircuit - 2020.05.27 at 18h 08m 22s.xml">
-      <configuration name="CircuitBoardGraphTest.testSupedsafrSimpleCircuit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CircuitBoardGraphTest_testSupedsafrSimpleCircuit - 2020.05.27 at 18h 08m 58s.xml">
-      <configuration name="CircuitBoardGraphTest.testSupedsafrSimpleCircuit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CircuitBoardGraphTest_testSupedsafrSimpleCircuit2 - 2020.05.27 at 18h 10m 49s.xml">
-      <configuration name="CircuitBoardGraphTest.testSupedsafrSimpleCircuit2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CircuitBoardGraphTest_testSupedsafrSimpleCircuit - 2020.05.27 at 20h 29m 00s.xml">
-      <configuration name="CircuitBoardGraphTest.testSupedsafrSimpleCircuit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CircuitBoardGraphTest_testSupedsafrSimpleCircuit - 2020.05.27 at 20h 29m 53s.xml">
-      <configuration name="CircuitBoardGraphTest.testSupedsafrSimpleCircuit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CircuitBoardGraphTest_testCircuitWithResistorsInSeries - 2020.05.27 at 20h 30m 51s.xml">
-      <configuration name="CircuitBoardGraphTest.testCircuitWithResistorsInSeries" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CircuitBoardGraphTest_testSimpleCircuitWithOneResistorSource - 2020.05.27 at 20h 36m 29s.xml">
+    <history-entry file="CircuitBoardGraphTest_testSimpleCircuitWithOneResistorSource - 2020.05.28 at 00h 43m 39s.xml">
       <configuration name="CircuitBoardGraphTest.testSimpleCircuitWithOneResistorSource" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircuitBoardGraphTest_testCircuitWithResistorsInSeries - 2020.05.27 at 20h 36m 33s.xml">
-      <configuration name="CircuitBoardGraphTest.testCircuitWithResistorsInSeries" configurationId="JUnit" />
+    <history-entry file="CircuitBoardGraphTest_testSimpleCircuitWithOneResistorSource - 2020.05.28 at 00h 54m 28s.xml">
+      <configuration name="CircuitBoardGraphTest.testSimpleCircuitWithOneResistorSource" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CircuitBoardGraphTest_testSimpleCircuitWithOneResistorSource - 2020.05.28 at 01h 01m 40s.xml">
+      <configuration name="CircuitBoardGraphTest.testSimpleCircuitWithOneResistorSource" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CircuitBoardGraphTest_testSimpleCircuitWithOneResistorSource - 2020.05.28 at 01h 03m 23s.xml">
+      <configuration name="CircuitBoardGraphTest.testSimpleCircuitWithOneResistorSource" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CircuitBoardGraphTest_testSimpleCircuitWithOneResistorSource - 2020.05.28 at 01h 03m 27s.xml">
+      <configuration name="CircuitBoardGraphTest.testSimpleCircuitWithOneResistorSource" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComponentsTest - 2020.05.28 at 01h 04m 31s.xml">
+      <configuration name="ComponentsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComponentsTest - 2020.05.28 at 01h 13m 52s.xml">
+      <configuration name="ComponentsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CircuitBoardGraphTest_testCircuitWithTwoVoltageSources - 2020.05.28 at 01h 13m 57s.xml">
+      <configuration name="CircuitBoardGraphTest.testCircuitWithTwoVoltageSources" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CircuitBoardGraphTest - 2020.05.28 at 01h 23m 36s.xml">
+      <configuration name="CircuitBoardGraphTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CircuitBoardGraphTest - 2020.05.28 at 01h 23m 53s.xml">
+      <configuration name="CircuitBoardGraphTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72978000" />
+    <option name="totallyTimeSpent" value="77611000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2568" y="-238" width="2576" height="1426" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1609698" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21387696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -418,8 +425,8 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32947233" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27842227" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39442658" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2764331" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34183672" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -458,9 +465,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Tests/circuitAnalysis/CircuitBoardGraphTest.java</url>
-          <line>28</line>
+          <line>21</line>
           <properties />
-          <option name="timeStamp" value="37" />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/circuitAnalysis/FindValues.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -557,16 +570,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/circuitAnalysis/NodeTester.java" />
-    <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/components/Wire.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -592,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/components/Resistor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -608,63 +604,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/CircuitBoardGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="557">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2078#2079#0" expanded="true" />
-            <element signature="e#2109#2110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/circuitAnalysis/ComponentsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/FindValues.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/components/Source.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <folding>
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#2072#2073#0" expanded="true" />
+            <element signature="e#2104#2105#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/Components.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="185" column="27" selection-start-line="185" selection-start-column="27" selection-end-line="185" selection-end-column="27" />
+        <state>
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
           <folding>
-            <element signature="e#4181#4182#0" expanded="true" />
-            <element signature="e#4214#4215#0" expanded="true" />
             <element signature="e#4251#4252#0" expanded="true" />
             <element signature="e#4283#4284#0" expanded="true" />
-            <element signature="e#4328#4329#0" expanded="true" />
-            <element signature="e#4363#4364#0" expanded="true" />
+            <element signature="e#4324#4325#0" expanded="true" />
+            <element signature="e#4359#4360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/circuitAnalysis/CircuitBoardGraphTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        <state relative-caret-position="-106">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/components/Resistor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/circuitAnalysis/ComponentsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/components/Source.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding>
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/circuitAnalysis/FindValues.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>

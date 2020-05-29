@@ -68,10 +68,7 @@ public class CircuitBoardGraph {
      */
 
 
-    public Map<Integer, Components > getMap(){
+    public Map<Integer, Components> getMap() {
         return vertexMap;
-    }
-    public void KVL(){
-
     }
 }

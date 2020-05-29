@@ -54,54 +54,12 @@ public interface Node {
     String getName();
 
     /**
-     * Gets this visit state
-     *
-     * @return if visited
-     */
-    boolean getVisited();
-
-    /**
-     * Changes the state of this
-     *
-     * @param b - change of visited state
-     */
-    void setVisited(boolean b);
-
-    /**
-     * Gets Node that called this
-     *
-     * @return previous called neighbor
-     */
-    Node getPrevious();
-
-    /**
      * Changes Name of Node this
      *
      * @param name - change label of this
      */
     void setName(String name);
 
-    /**
-     * Gets x spot in {@code matrix}
-     *
-     * @return x position in {@code matrix}
-     */
-    public int getX();
-
-    /**
-     * Gets y spot in {@code matrix}
-     *
-     * @return y position in {@code matrix}
-     */
-    public int getY();
-
-
-    /**
-     * Set previous adjacent neighbor
-     *
-     * @param x - neighbor that called this
-     */
-    public void setPrevious(Components x);
 }
 
 

@@ -22,4 +22,8 @@ public class Source extends Components {
     public void setValue(double value){
         super.setValue(value);
     }
+
+    public boolean isSource(){
+        return true;
+    }
 }

@@ -14,9 +14,7 @@ public class Components implements Node {
      */
     private String name;
     private int nodeID;
-    private double dFromStart, value;
-    private boolean visited;
-    private Components previous;
+    private double value;
     private LinkedList<Components> adj;
 
     /**
@@ -105,32 +103,6 @@ public class Components implements Node {
         return name;
     }
 
-    /**
-     * Gets this visit state
-     *
-     * @return if visited
-     */
-    public boolean getVisited() {
-        return visited;
-    }
-
-    /**
-     * Changes the state of this
-     *
-     * @param b - change of visited state
-     */
-    public void setVisited(boolean b) {
-        visited = b;
-    }
-
-    /**
-     * Gets Node that called this
-     *
-     * @return previous called neighbor
-     */
-    public Node getPrevious() {
-        return previous;
-    }
 
     /**
      * Changes Name of Node this
@@ -139,43 +111,6 @@ public class Components implements Node {
      */
     public void setName(String name) {
         this.name = name;
-    }
-
-    @Override
-    public int getX() {
-        return 0;
-    }
-
-    @Override
-    public int getY() {
-        return 0;
-    }
-
-    /**
-     * Changes {@code dFromStart} to infinity from start
-     *
-     * @param positiveInfinity - set distance to infinity for this
-     */
-    public void setDistanceFromStart(double positiveInfinity) {
-        dFromStart = positiveInfinity;
-    }
-
-    /**
-     * Set previous adjacent neighbor
-     *
-     * @param x - neighbor that called this
-     */
-    public void setPrevious(Components x) {
-        this.previous = x;
-    }
-
-    /**
-     * Gets the current distant from start
-     *
-     * @return {@code dFromStart} containing total steps from start
-     */
-    public double getDistanceFromStart() {
-        return dFromStart;
     }
 
     public void setNodeID(int id) {
