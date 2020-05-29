@@ -22,8 +22,8 @@ public class Resistor extends Components {
     }
 
     @Override
-    public double getValue() {
-        return super.getValue();
+    public double getElementValue() {
+        return super.getElementValue();
     }
 
     /**

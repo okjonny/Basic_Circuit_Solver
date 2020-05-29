@@ -52,13 +52,13 @@ public class Components implements Node {
         return this.nodeID;
     }
 
-    public double getValue() {
+    public double getElementValue() {
         return this.value;
     }
 
     @Override
-    public <T extends Components> void addEdge(Components otherNode) {
-        adj.add(new Components(otherNode.getName(), otherNode.getValue(), otherNode.getNodeID()));
+    public <T extends Components> void addEdge(T otherNode) {
+        adj.add(new otherNode.(otherNode.getName(), otherNode.getElementValue(), otherNode.getNodeID()));
     }
 
     /**

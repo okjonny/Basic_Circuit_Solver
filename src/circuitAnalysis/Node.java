@@ -23,7 +23,7 @@ public interface Node {
      *
      * @param otherNode - adjacent neighbor of this
      */
-    public <T extends Components> void addEdge(Components otherNode);
+    public <T extends Components> void addEdge(T otherNode);
 
     /**
      * Retrives neighbor objects

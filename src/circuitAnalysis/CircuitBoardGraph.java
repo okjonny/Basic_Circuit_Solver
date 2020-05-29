@@ -60,8 +60,8 @@ public class CircuitBoardGraph {
      *
      * For example - vs1 -> wire ->  rs1 -> wire -> vs1
      *
-     * So, we save value of voltage of the loop in int - [vs1.getValue(), ...,n]
-     * Same with resistors - [rs1.getValue(), ..., n]
+     * So, we save value of voltage of the loop in int - [vs1.getElementValue(), ...,n]
+     * Same with resistors - [rs1.getElementValue(), ..., n]
      * Wires are  decorative backend but helpful to see with images for a user-friendly experience
      *
      *
