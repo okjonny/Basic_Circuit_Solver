@@ -1,5 +1,6 @@
 package circuitAnalysis;
 
+import java.awt.*;
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -58,7 +59,7 @@ public class Components implements Node {
 
     @Override
     public <T extends Components> void addEdge(T otherNode) {
-        adj.add(new otherNode.(otherNode.getName(), otherNode.getElementValue(), otherNode.getNodeID()));
+        adj.add(new Components(otherNode.getName(), otherNode.getElementValue(), otherNode.getNodeID()));
     }
 
     /**

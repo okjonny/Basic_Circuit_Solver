@@ -13,16 +13,16 @@ public class FindValues {
         double voltage = 0;
         double totalResistance = 0;
         for (Map.Entry<Integer, Components> entry : circuit.getMap().entrySet()) {
-            if (entry.getValue() instanceof Resistor) {
+            if (entry.getValue().getClass().isAssignableFrom(Resistor.class)) {
                 totalResistance = entry.getValue().getElementValue();
-            } else if (entry.getValue() instanceof Source) {
+            } else if (entry.getValue().getClass().isAssignableFrom(Source.class)) {
                 voltage = entry.getValue().getElementValue();
             }
             for (Components edge : entry.getValue().getEdges()) {
-                if (checkForType(edge, Source.class)) {
+                if (edge.getClass().isAssignableFrom(Source.class)){
                     voltage += edge.getElementValue();
                 }
-                if (checkForType(edge, Resistor.class)) {
+                if (edge.getClass().isAssignableFrom(Resistor.class)) {
                     totalResistance += edge.getElementValue();
                 }
             }

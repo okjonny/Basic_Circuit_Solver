@@ -18,7 +18,7 @@ public class CircuitBoardGraphTest {
         source1.setValue(10);
         tester.addVertex(source1);
         source1.addEdge(rs1);
-        // v/r = i => 10/5k = 2mA; v=ir => 5000(2mA) = 10
+        // v/r = i => 10/5k = 2mA; v=ir => 5k(2mA) = 10
         assertEquals(10, FindValues.findVoltageDropAcrossResistor(tester, rs1), 0);
     }
 
