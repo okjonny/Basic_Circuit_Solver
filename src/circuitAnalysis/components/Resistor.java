@@ -16,6 +16,15 @@ public class Resistor extends Components {
         this.measurement = "Ohm's";
     }
 
+    /**
+     * Adds a parralel resistor to this
+     *
+     * @param rOther - array of parralel resistors that come in contact with this
+     */
+    public double isParrallelWithOtherResistor(Resistor rOther) {
+        return 1 / rOther.getElementValue() + 1 / this.getElementValue();
+    }
+
     @Override
     public String getName() {
         return super.getName();

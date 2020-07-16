@@ -1,6 +1,5 @@
 package circuitAnalysis;
 
-import java.awt.*;
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -9,7 +8,7 @@ import java.util.LinkedList;
  * Can extend this  class so that the CircuitBoardGraph class can add 'Components' without
  * having to worry if the element is a wire or something specific.
  */
-public class Components implements Node {
+public abstract class Components implements Node {
     /**
      * Private Instance Variables
      */
@@ -59,7 +58,7 @@ public class Components implements Node {
 
     @Override
     public <T extends Components> void addEdge(T otherNode) {
-        adj.add(new Components(otherNode.getName(), otherNode.getElementValue(), otherNode.getNodeID()));
+        adj.add(otherNode);
     }
 
     /**

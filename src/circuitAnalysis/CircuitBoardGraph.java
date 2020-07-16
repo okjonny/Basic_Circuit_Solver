@@ -35,7 +35,7 @@ public class CircuitBoardGraph {
      *
      * @param element
      */
-    public void addVertex(Components element) {
+    public void addConnection(Components element) {
         nodeId++;
         assert !vertexMap.containsKey(element.getNodeID()) : "Node ID already exists";
         element.setNodeID(nodeId);

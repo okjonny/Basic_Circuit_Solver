@@ -23,7 +23,4 @@ public class Source extends Components {
         super.setValue(value);
     }
 
-    public boolean isSource(){
-        return true;
-    }
 }
