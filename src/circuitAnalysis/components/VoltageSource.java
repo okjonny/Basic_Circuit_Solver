@@ -1,42 +1,29 @@
 // Jonny Palacios-Torres - 2020
-package circuitAnalysis.components;
 
+package circuitAnalysis.components;
 import circuitAnalysis.Components;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 
 /*
- * Resistors are important for controlling voltage through a certain branch
- * in the circuit. Without resistance an LED would explode if connected to a 5V
- * source. So we add resistors to restrict current flow given by voltage (hence
- * Ohm's Law V=IR).
+ * Important for our circuit to have voltage, without voltage our circuit
+ * would have no power and nothing will come about it.
  */
-public class Resistor extends Components {
+public class VoltageSource extends Components {
 
     /**
      * Private Instance Variables
      */
-    private String name;
+    private String name, measurement = "V";
     private double value;
     private LinkedList<Components> connectedComponents;
-    private String measurement = "Ω";
 
-    public Resistor(String name, double value) {
-        name = name;
-        value = value;
+    public VoltageSource(String _name, double _value) {
+        name = _name;
+        value = _value;
         connectedComponents = new LinkedList<>();
     }
-
-    /**
-     * Adds a parralel resistor to this
-     *
-     * @param rOther - array of parralel resistors that come in contact with this
-     */
-    public double parrallelWithResistor(Resistor rOther) {
-        return 1 / rOther.getElementValue() + (1 / this.getElementValue());
-    }
-
 
     public double getElementValue() {
         return this.value;
@@ -75,5 +62,4 @@ public class Resistor extends Components {
     public void setValue(double value) {
         this.value = value;
     }
-
 }

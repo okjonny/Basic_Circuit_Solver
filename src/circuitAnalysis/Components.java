@@ -1,74 +1,36 @@
-package circuitAnalysis;
+// Jonny Palacios-Torres - 2020
 
+package circuitAnalysis;
 import java.util.Iterator;
 import java.util.LinkedList;
 
 /**
  * Purpose of this class is for all elements (Wires, Power Sources, Resistors, etc.)
- * Can extend this  class so that the CircuitBoardGraph class can add 'Components' without
+ * Can extend this  class so that the CircuitGraph class can add 'Components' without
  * having to worry if the element is a wire or something specific.
  */
-public abstract class Components implements Node {
-    /**
-     * Private Instance Variables
-     */
-    private String name;
-    private int nodeID;
-    private double value;
-    private LinkedList<Components> adj;
+public abstract class Components {
 
     /**
-     * Default Constructor for children classes to take values from.
-     *
-     * @param name  - title of element
-     * @param value - can represent (Volts, Resistance, etc.)
+     * Returns the number value of measurement
+     * @return
      */
-    public Components(String name, double value) {
-        this.name = name;
-        this.value = value;
-        this.adj = new LinkedList<>();
-    }
+    public abstract double getElementValue();
+
 
     /**
-     * Default Constructor for children classes to take values from.
-     *
-     * @param name   - title of element
-     * @param value  - can represent (Volts, Resistance, etc.)
-     * @param nodeID - unique ID to retrieve data from {@code vertexmap} in CircuitBoardGraph class.
+     * Adds a connection to the current node
      */
-    public Components(String name, double value, int nodeID) {
-        this.name = name;
-        this.value = value;
-        this.nodeID = nodeID;
-        this.adj = new LinkedList<>();
-    }
+    public abstract <T extends Components> void addEdge(T otherNode);
 
-    /**
-     * Retrieves unique ID
-     *
-     * @return this nodeID
-     */
-    public int getNodeID() {
-        return this.nodeID;
-    }
-
-    public double getElementValue() {
-        return this.value;
-    }
-
-    @Override
-    public <T extends Components> void addEdge(T otherNode) {
-        adj.add(otherNode);
-    }
 
     /**
      * Retrieves neighbor objects
      *
-     * @return iterator of {@code adj} linked-list
+     * @return iterator of {@code connectedComponents} linked-list
      */
-    public Iterator<Components> edges() {
-        return adj.iterator();
-    }
+    public abstract Iterator<Components> edges();
+
 
     /**
      * Makes this Node readable showing its neighbors
@@ -76,32 +38,23 @@ public abstract class Components implements Node {
      * @return s - name of node
      */
     @Override
-    public String toString() {
-        Iterator<Components> itr = adj.iterator();
-        StringBuilder s = new StringBuilder("[" + this.getName() + ((itr.hasNext()) ? " : " : "]"));
-        while (itr.hasNext()) {
-            s.append(itr.next() + ((itr.hasNext()) ? " -> " : "]"));
-        }
-        return s.toString();
-    }
+    public abstract String toString();
+
 
     /**
      * Retrieves the entire list of neighbors this has
      *
      * @return this edges list
      */
-    public LinkedList<Components> getEdges() {
-        return adj;
-    }
+    public abstract LinkedList<Components> getConnections();
+
 
     /**
      * Gets the name of this
      *
      * @return name
      */
-    public String getName() {
-        return name;
-    }
+    public abstract String getName();
 
 
     /**
@@ -109,15 +62,13 @@ public abstract class Components implements Node {
      *
      * @param name - change label of this
      */
-    public void setName(String name) {
-        this.name = name;
-    }
+    public abstract void setNodeName(String name);
 
-    public void setNodeID(int id) {
-        this.nodeID = id;
-    }
 
-    public void setValue(double value){
-        this.value =  value;
-    }
+    /**
+     * Sets new value for this
+     *
+     * @param value
+     */
+    public abstract void setValue(double value);
 }
